@@ -1,0 +1,174 @@
+http://cs.bit.edu.cn/list.php?tid=22,23,24<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="shortcut icon" href="favicon.ico" />
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta http-equiv="Content-Language" content="gbk" />
+<meta http-equiv="Content-Language" content="zh-CN" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta content="北京理工大学,北京理工计算机学院" name="keywords" />
+<meta content="北京理工大学,北京理工计算机学院" name="description" />
+<meta content="北京理工大学计算机学院" name="copyright" />
+<meta content="通达科技" name="author" />
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+<script src="./js/jquery-1.4a2.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="./js/jquery.lazyload.js"></script>
+<script type="text/javascript" src="./js/scrolltopcontrol.js"></script>
+<title>北京理工大学计算机学院</title>
+<script type="text/javascript"> 
+$(document).ready(function() {
+
+	$("img").lazyload({placeholder: "./js/grey.gif",effect: "fadeIn"});
+
+	$('.nav_sub_ul').css("display","none");
+	$('#hd_nav_0_sub').css("display","block");
+
+	$('.nav_ul li').click(function(){
+			$('.nav_ul li').removeClass("ac");$(this).addClass("ac");
+			$('.nav_sub_ul').css("display","none");$("#"+$(this).attr("id")+"_sub").css("display","block");
+	});
+
+	show();
+
+});
+
+function show(){
+	var date = new Date(); //日期对象
+	var now = "";
+	now = "今天是：" + date.getFullYear()+"年"; //读英文就行了
+	now = now + (date.getMonth()+1)+"月"; //取月的时候取的是当前月-1如果想取当前月+1就可以了
+	now = now + date.getDate()+"日";
+	day = date.getDay();
+	switch(day) {
+		case 0 : day = "日";break;
+		case 1 : day = "一";break;
+		case 2 : day = "二";break;
+		case 3 : day = "三";break;
+		case 4 : day = "四";break;
+		case 5 : day = "五";break;
+		case 6 : day = "六";break;
+		default: day = "未知";
+	}
+	now = now + " 星期" + day;
+	document.getElementById("nowDiv").innerHTML = now; //div的html是now这个字符串 
+	setTimeout("show()",1000); //设置过1000毫秒就是1秒，调用show方法
+}
+
+</script>
+</head>
+<body>
+<div id="hd">
+	<div id="hd-inner">
+		<div id="logo"></div>
+		<div id="nav">
+			<div class="nav nav-cl"></div>
+			<div class="nav nav-cc">
+				<ul class="nav_ul">
+					<li id="hd_nav_0" class="ac"><a href="./" target="_self"><span>首页</span></a></li>
+					<li id="hd_nav_1"><a href="info.php?pn=1" target="_self"><span>学院概况</span></a></li>
+					<li id="hd_nav_2"><a href="info.php?pn=2" target="_self"><span>交流合作</span></a></li>
+					<li id="hd_nav_3"><a href="info.php?pn=3" target="_self"><span>学科建设</span></a></li>
+					<li id="hd_nav_4"><a href="info.php?pn=4" target="_self"><span>科学研究</span></a></li>
+					<li id="hd_nav_5"><a href="info.php?pn=5" target="_self"><span>教学/实验</span></a></li>
+					<li id="hd_nav_6"><a href="info.php?pn=6" target="_self"><span>学生工作</span></a></li>
+					<li id="hd_nav_7"><a href="info.php?pn=7" target="_self"><span>招生就业</span></a></li>
+					<li id="hd_nav_8"><a href="info.php?pn=8" target="_self"><span>校友联系</span></a></li>
+				</ul>
+
+				<div id="hd_nav_0_sub" class="nav_sub_ul">
+					<marquee direction="left" scrollamount="3" id="hot_news_list" onmouseover="this.stop();" onmouseout="this.start();">
+						<a href="news.php?nid=791" target="_blank" title="赵长禄副校长调研计算机学院工作">【学院新闻】赵长禄副校长调研计算机学院工作</a>&nbsp;&nbsp;<a href="news.php?nid=789" target="_blank" title="关于做好普通高等学校毕业生求职补贴发放工作的通知">【公示通告】关于做好普通高等学校毕业生求职补贴发放工作的通知</a>&nbsp;&nbsp;<a href="news.php?nid=786" target="_blank" title="计算机学院关于对群众路线教育实践活动需要征求学生的意见和建议通知">【公示通告】计算机学院关于对群众路线教育实践活动需要征求学生的意见和建议通知</a>&nbsp;&nbsp;					</marquee>
+					<span id="nowDiv"></span>
+				</div>
+				<ul id="hd_nav_1_sub" class="nav_sub_ul style_dspn">
+					<li class="ac"><a href="info.php?pn=1#s1">学院基本情况</a>|</li>
+					<li><a href="info.php?pn=1#s2">学院领导</a>|</li>
+					<li><a href="info.php?pn=1#s3">学院组织机构</a>|</li>
+					<li><a href="info.php?pn=1#s4">学院图片</a></li>
+				</ul>
+				<ul id="hd_nav_2_sub" class="nav_sub_ul style_dspn">
+				</ul>
+				<ul id="hd_nav_3_sub" class="nav_sub_ul style_dspn">
+					<li><a href="#">主要学术团队</a>|</li>
+					<li><a href="#">学术带头人</a></li>
+				</ul>
+				<ul id="hd_nav_4_sub" class="nav_sub_ul style_dspn">
+				</ul>
+				<ul id="hd_nav_5_sub" class="nav_sub_ul style_dspn">
+				</ul>
+				<ul id="hd_nav_6_sub" class="nav_sub_ul style_dspn">
+					<li><a href="info.php?pn=6#s1">党建及思政教育</a>|</li>
+					<li><a href="info.php?pn=6#s2">学术实践</a>|</li>
+					<li><a href="info.php?pn=6#s3">志愿服务</a>|</li>
+					<li><a href="info.php?pn=6#s4">群团风采</a>|</li>
+					<li><a href="info.php?pn=6#s5">基层组织</a>|</li>
+					<li><a href="info.php?pn=6#s6">学生管理</a>|</li>
+					<li><a href="info.php?pn=6#s7">心理健康</a></li>
+				</ul>
+				<ul id="hd_nav_7_sub" class="nav_sub_ul style_dspn">
+					<li><a href="info.php?pn=7#s1">本科生招生</a>|</li>
+					<li><a href="info.php?pn=7#s2">硕士生招生</a>|</li>
+					<li><a href="info.php?pn=7#s3">博士生招生</a>|</li>
+					<li><a href="info.php?pn=7#s4">工程硕士招生</a>|</li>
+					<li><a href="info.php?pn=7#s5">就业状况</a>|</li>
+					<li><a href="info.php?pn=7#s6">就业指导</a></li>
+				</ul>
+				<ul id="hd_nav_8_sub" class="nav_sub_ul style_dspn">
+					<li><a href="#">校友风采</a>|</li>
+					<li><a href="#">校友名录</a>|</li>
+					<li><a href="#">流金岁月</a></li>
+				</ul>
+			</div>
+			<div class="nav nav-cr"></div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div><div id="bd" class="c24_info_page bd_shadow_bg">
+<div id="bd-c6" class="info_bd-c6">
+		<div class="comm_box">
+			<h3 class="comm_box_hd info_col6_title">随机新闻</h3>
+			<ul class="comm_box_bd_ul info_col6_ul">
+				<li><a href="news.php?nid=301" target="_blank" title="2009级保研工作汇总">2009级保研工作汇总</a>（10-18）</li><li><a href="news.php?nid=351" target="_blank" title="（北京、武汉、深圳）东方网力科技股份有限公司（本科及以上）">（北京、武汉、深圳）东方网力科技股份有限公司（本科及以上）</a>（11-07）</li><li><a href="news.php?nid=417" target="_blank" title="【信仰 青春 阳光】计算机学院2011级硕6支部“野三坡红色之旅”主题团日活动">【信仰 青春 阳光】计算机学院2011级硕6支部“野三坡红色之旅”主题团日活动</a>（11-30）</li><li><a href="news.php?nid=438" target="_blank" title="2012年“同有飞骥”数据安全奖助学金获奖公示">2012年“同有飞骥”数据安全奖助学金获奖公示</a>（12-12）</li><li><a href="news.php?nid=560" target="_blank" title="【2012本】关于开展基础教育学院第三届团支部技能风采展的通知">【2012本】关于开展基础教育学院第三届团支部技能风采展的通知</a>（03-19）</li><li><a href="news.php?nid=391" target="_blank" title="【2012本】环湖赛报名表">【2012本】环湖赛报名表</a>（11-21）</li><li><a href="news.php?nid=693" target="_blank" title="（广州）白云国际机场计算机信息服务中心（本科及以上）">（广州）白云国际机场计算机信息服务中心（本科及以上）</a>（05-21）</li><li><a href="news.php?nid=408" target="_blank" title="（北京）华风气象传媒集团（本科及以上）">（北京）华风气象传媒集团（本科及以上）</a>（11-27）</li><li><a href="news.php?nid=434" target="_blank" title="计算机团校召开学生干部学习宣传贯彻十八大精神会议">计算机团校召开学生干部学习宣传贯彻十八大精神会议</a>（12-10）</li><li><a href="news.php?nid=373" target="_blank" title="“21世纪学科前沿”系列讲座之-----“拟合和分割多结构数据的极值方法”专题学术讲座">“21世纪学科前沿”系列讲座之-----“拟合和分割多结构数据的极值方法”专题学术讲座</a>（11-15）</li>			</ul>
+		</div>
+		<!-- bd col6 commbox -->
+	</div>
+	<!-- bd col6 -->
+
+	<div id="bd-c18">
+		<div class="bd-c18-sp-entry">
+			<h5 class="info_sp_title"><a href="./">首页</a> >> <a href="list.php?tid=22,23,24">最新公告</a></h5>
+			<div class="bd-c18-sp-list">	
+				<ul class="c18-com_ul">
+					            <li><span class="fr">2013-08-30 11:48</span><a href="news.php?nid=789" title="" target="_blank">【公示通告】关于做好普通高等学校毕业生求职补贴发放工作的通知</a></li>
+            <li><span class="fr">2013-08-28 14:01</span><a href="news.php?nid=786" title="" target="_blank">【公示通告】计算机学院关于对群众路线教育实践活动需要征求学生的意见和建议通知</a></li>
+            <li><span class="fr">2013-08-28 10:41</span><a href="news.php?nid=785" title="" target="_blank">【事务教务】计算机学院评定2013-2014学年博士生奖学金的通知</a></li>
+            <li><span class="fr">2013-08-27 22:39</span><a href="news.php?nid=783" title="" target="_blank">【公示通告】计算机学院关于开展2013-2014学年家庭经济困难学生认定工作通知</a></li>
+            <li><span class="fr">2013-07-01 12:43</span><a href="news.php?nid=763" title="" target="_blank">【公示通告】关于做好2013年暑假期间学生安全稳定工作的通知</a></li>
+            <li><span class="fr">2013-06-26 10:07</span><a href="news.php?nid=759" title="" target="_blank">【公示通告】2013年离校系统使用流程说明</a></li>
+            <li><span class="fr">2013-04-16 16:13</span><a href="news.php?nid=618" title="" target="_blank">【就业实习】北京理工大学计算机学院毕业生就业跟踪调查表</a></li>
+            <li><span class="fr">2013-09-06 15:36</span><a href="news.php?nid=807" title="" target="_blank">【就业实习】（北京及多地）北京中电普华公司（硕士及以上）</a></li>
+            <li><span class="fr">2013-09-06 10:12</span><a href="news.php?nid=806" title="" target="_blank">【公示通告】【2012本】领取（补发）教材通知 </a></li>
+            <li><span class="fr">2013-09-04 16:59</span><a href="news.php?nid=805" title="" target="_blank">【事务教务】2010级硬件实验通知</a></li>
+            <li><span class="fr">2013-09-04 10:09</span><a href="news.php?nid=803" title="" target="_blank">【就业实习】（北京）电子科学研究院（博士）</a></li>
+            <li><span class="fr">2013-09-04 10:00</span><a href="news.php?nid=802" title="" target="_blank">【公示通告】【2012本】2012-2013学年成绩及第二学期成绩统计情况</a></li>
+            <li><span class="fr">2013-09-04 08:41</span><a href="news.php?nid=801" title="" target="_blank">【事务教务】2013级双选表和导师双选题目</a></li>
+            <li><span class="fr">2013-09-04 08:42</span><a href="news.php?nid=800" title="" target="_blank">【公示通告】关于新生迁户口的通知</a></li>
+            <li><span class="fr">2013-09-03 18:38</span><a href="news.php?nid=799" title="" target="_blank">【公示通告】计算机学生（10级本科生）考研专业教室座位使用申请的通知</a></li>
+            <li><span class="fr">2013-09-03 16:10</span><a href="news.php?nid=798" title="" target="_blank">【公示通告】【2012本】开展2013-2014学年家庭经济困难学生认定工作的通知</a></li>
+            <li><span class="fr">2013-09-03 15:12</span><a href="news.php?nid=795" title="" target="_blank">【就业实习】（北京）东芝公司（硕士及以上）</a></li>
+            <li><span class="fr">2013-09-03 14:59</span><a href="news.php?nid=794" title="" target="_blank">【就业实习】（北京）苹果公司iOS研发部门（本科及以上）</a></li>
+            <li><span class="fr">2013-09-02 16:48</span><a href="news.php?nid=793" title="" target="_blank">【就业实习】（北京）冰枫互动有限公司（本科及以上）</a></li>
+            <li><span class="fr">2013-09-02 10:05</span><a href="news.php?nid=792" title="" target="_blank">【就业实习】（北京及多地）绿盟科技（本科及以上）</a></li>
+                            </ul>
+             <div class="p_bar"><span class="p_info">共:613条</span><span class="p_curpage">1</span><a href="http://cs.bit.edu.cn/list.php?tid=22,23,24&amp;page=2" class="p_num">2</a><a href="http://cs.bit.edu.cn/list.php?tid=22,23,24&amp;page=3" class="p_num">3</a><a href="http://cs.bit.edu.cn/list.php?tid=22,23,24&amp;page=4" class="p_num">4</a><a href="http://cs.bit.edu.cn/list.php?tid=22,23,24&amp;page=5" class="p_num">5</a><a href="http://cs.bit.edu.cn/list.php?tid=22,23,24&amp;page=6" class="p_num">6</a><a href="http://cs.bit.edu.cn/list.php?tid=22,23,24&amp;page=7" class="p_num">7</a><a href="http://cs.bit.edu.cn/list.php?tid=22,23,24&amp;page=8" class="p_num">8</a><a href="http://cs.bit.edu.cn/list.php?tid=22,23,24&amp;page=2" class="p_redirect">下一页 &#8250;</a><a href="http://cs.bit.edu.cn/list.php?tid=22,23,24&amp;page=31" class="p_redirect">末页 &raquo;</a></div>			</div>			
+			<span class="gototop"><a href="#top"><img src="./img/gototop.gif" alt="" width="41" height="13" /></a></span>
+		</div>
+		<!-- end of sp-entry -->
+	</div>
+
+	<div class="clear"></div>
+</div>
+
+<div id="ft">
+	<p>&copy;版权所有 2005-2011 北京理工大学计算机学院 &nbsp;|&nbsp;<a href="./web" target="_blank">原网站入口</a>&nbsp;|&nbsp;<a href="http://cs.bit.edu.cn:8081" target="_blank">原学生事务平台</a></p>
+</div>

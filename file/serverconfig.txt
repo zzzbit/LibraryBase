@@ -1,0 +1,8 @@
+//下面数据的意义，数据库的名字、用户名、密码、图片存放路径、高斯文件1路径、高斯文件2路径、暂存图片在路径
+Spider
+sa
+20091743
+C:\DataLib\Spider
+file\shapeMMP2.0_0_new.txt
+file\shapeMMP2.0_1_new.txt
+image\

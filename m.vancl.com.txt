@@ -1,0 +1,7 @@
+1
+1
+http://m.vancl.com/Product/ProductList?pageIndex=(*)&keyWord=%E9%9E%8B|1|5
+3
+10Url@@srlititle"><a href=".+?"|http://m.vancl.com(*)
+02jpg_@@og:image" content=".+?"@@01Intro@@property="og:title" content=".+?"@@01Price@@£§.+?</span>@@01Url@@property="og:url" content=".+?"@@00Url@@…Ã∆∑±‡∫≈£∫.+?<|http://m.vancl.com/style/Details/(*)
+01Brand@@∆∑≈∆£∫.+?<

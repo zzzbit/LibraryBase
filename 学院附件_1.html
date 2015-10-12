@@ -1,0 +1,169 @@
+http://cs.bit.edu.cn/news.php?nid=789<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="shortcut icon" href="favicon.ico" />
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<meta http-equiv="Content-Language" content="gbk" />
+<meta http-equiv="Content-Language" content="zh-CN" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta content="北京理工大学,北京理工计算机学院" name="keywords" />
+<meta content="北京理工大学,北京理工计算机学院" name="description" />
+<meta content="北京理工大学计算机学院" name="copyright" />
+<meta content="通达科技" name="author" />
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+<script src="./js/jquery-1.4a2.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="./js/jquery.lazyload.js"></script>
+<script type="text/javascript" src="./js/scrolltopcontrol.js"></script>
+<title>关于做好普通高等学校毕业生求职补贴发放工作的通知 - 北京理工大学计算机学院</title>
+<script type="text/javascript"> 
+$(document).ready(function() {
+
+	$("img").lazyload({placeholder: "./js/grey.gif",effect: "fadeIn"});
+
+	$('.nav_sub_ul').css("display","none");
+	$('#hd_nav_0_sub').css("display","block");
+
+	$('.nav_ul li').click(function(){
+			$('.nav_ul li').removeClass("ac");$(this).addClass("ac");
+			$('.nav_sub_ul').css("display","none");$("#"+$(this).attr("id")+"_sub").css("display","block");
+	});
+
+	show();
+
+});
+
+function show(){
+	var date = new Date(); //日期对象
+	var now = "";
+	now = "今天是：" + date.getFullYear()+"年"; //读英文就行了
+	now = now + (date.getMonth()+1)+"月"; //取月的时候取的是当前月-1如果想取当前月+1就可以了
+	now = now + date.getDate()+"日";
+	day = date.getDay();
+	switch(day) {
+		case 0 : day = "日";break;
+		case 1 : day = "一";break;
+		case 2 : day = "二";break;
+		case 3 : day = "三";break;
+		case 4 : day = "四";break;
+		case 5 : day = "五";break;
+		case 6 : day = "六";break;
+		default: day = "未知";
+	}
+	now = now + " 星期" + day;
+	document.getElementById("nowDiv").innerHTML = now; //div的html是now这个字符串 
+	setTimeout("show()",1000); //设置过1000毫秒就是1秒，调用show方法
+}
+
+</script>
+</head>
+<body>
+<div id="hd">
+	<div id="hd-inner">
+		<div id="logo"></div>
+		<div id="nav">
+			<div class="nav nav-cl"></div>
+			<div class="nav nav-cc">
+				<ul class="nav_ul">
+					<li id="hd_nav_0" class="ac"><a href="./" target="_self"><span>首页</span></a></li>
+					<li id="hd_nav_1"><a href="info.php?pn=1" target="_self"><span>学院概况</span></a></li>
+					<li id="hd_nav_2"><a href="info.php?pn=2" target="_self"><span>交流合作</span></a></li>
+					<li id="hd_nav_3"><a href="info.php?pn=3" target="_self"><span>学科建设</span></a></li>
+					<li id="hd_nav_4"><a href="info.php?pn=4" target="_self"><span>科学研究</span></a></li>
+					<li id="hd_nav_5"><a href="info.php?pn=5" target="_self"><span>教学/实验</span></a></li>
+					<li id="hd_nav_6"><a href="info.php?pn=6" target="_self"><span>学生工作</span></a></li>
+					<li id="hd_nav_7"><a href="info.php?pn=7" target="_self"><span>招生就业</span></a></li>
+					<li id="hd_nav_8"><a href="info.php?pn=8" target="_self"><span>校友联系</span></a></li>
+				</ul>
+
+				<div id="hd_nav_0_sub" class="nav_sub_ul">
+					<marquee direction="left" scrollamount="3" id="hot_news_list" onmouseover="this.stop();" onmouseout="this.start();">
+						<a href="news.php?nid=791" target="_blank" title="赵长禄副校长调研计算机学院工作">【学院新闻】赵长禄副校长调研计算机学院工作</a>&nbsp;&nbsp;<a href="news.php?nid=789" target="_blank" title="关于做好普通高等学校毕业生求职补贴发放工作的通知">【公示通告】关于做好普通高等学校毕业生求职补贴发放工作的通知</a>&nbsp;&nbsp;<a href="news.php?nid=786" target="_blank" title="计算机学院关于对群众路线教育实践活动需要征求学生的意见和建议通知">【公示通告】计算机学院关于对群众路线教育实践活动需要征求学生的意见和建议通知</a>&nbsp;&nbsp;					</marquee>
+					<span id="nowDiv"></span>
+				</div>
+				<ul id="hd_nav_1_sub" class="nav_sub_ul style_dspn">
+					<li class="ac"><a href="info.php?pn=1#s1">学院基本情况</a>|</li>
+					<li><a href="info.php?pn=1#s2">学院领导</a>|</li>
+					<li><a href="info.php?pn=1#s3">学院组织机构</a>|</li>
+					<li><a href="info.php?pn=1#s4">学院图片</a></li>
+				</ul>
+				<ul id="hd_nav_2_sub" class="nav_sub_ul style_dspn">
+				</ul>
+				<ul id="hd_nav_3_sub" class="nav_sub_ul style_dspn">
+					<li><a href="#">主要学术团队</a>|</li>
+					<li><a href="#">学术带头人</a></li>
+				</ul>
+				<ul id="hd_nav_4_sub" class="nav_sub_ul style_dspn">
+				</ul>
+				<ul id="hd_nav_5_sub" class="nav_sub_ul style_dspn">
+				</ul>
+				<ul id="hd_nav_6_sub" class="nav_sub_ul style_dspn">
+					<li><a href="info.php?pn=6#s1">党建及思政教育</a>|</li>
+					<li><a href="info.php?pn=6#s2">学术实践</a>|</li>
+					<li><a href="info.php?pn=6#s3">志愿服务</a>|</li>
+					<li><a href="info.php?pn=6#s4">群团风采</a>|</li>
+					<li><a href="info.php?pn=6#s5">基层组织</a>|</li>
+					<li><a href="info.php?pn=6#s6">学生管理</a>|</li>
+					<li><a href="info.php?pn=6#s7">心理健康</a></li>
+				</ul>
+				<ul id="hd_nav_7_sub" class="nav_sub_ul style_dspn">
+					<li><a href="info.php?pn=7#s1">本科生招生</a>|</li>
+					<li><a href="info.php?pn=7#s2">硕士生招生</a>|</li>
+					<li><a href="info.php?pn=7#s3">博士生招生</a>|</li>
+					<li><a href="info.php?pn=7#s4">工程硕士招生</a>|</li>
+					<li><a href="info.php?pn=7#s5">就业状况</a>|</li>
+					<li><a href="info.php?pn=7#s6">就业指导</a></li>
+				</ul>
+				<ul id="hd_nav_8_sub" class="nav_sub_ul style_dspn">
+					<li><a href="#">校友风采</a>|</li>
+					<li><a href="#">校友名录</a>|</li>
+					<li><a href="#">流金岁月</a></li>
+				</ul>
+			</div>
+			<div class="nav nav-cr"></div>
+		</div>
+	</div>
+	<div class="clear"></div>
+</div><div id="bd" class="c24_info_page bd_shadow_bg">
+<div id="bd-c6" class="info_bd-c6">
+		<div class="comm_box">
+			<h3 class="comm_box_hd info_col6_title">同类新闻</h3>
+			<ul class="comm_box_bd_ul info_col6_ul">
+				<li><a href="news.php?nid=789" target="_blank" title="关于做好普通高等学校毕业生求职补贴发放工作的通知">关于做好普通高等学校毕业生求职补贴发放工作的通知</a>（08-30）</li><li><a href="news.php?nid=786" target="_blank" title="计算机学院关于对群众路线教育实践活动需要征求学生的意见和建议通知">计算机学院关于对群众路线教育实践活动需要征求学生的意见和建议通知</a>（08-28）</li><li><a href="news.php?nid=783" target="_blank" title="计算机学院关于开展2013-2014学年家庭经济困难学生认定工作通知">计算机学院关于开展2013-2014学年家庭经济困难学生认定工作通知</a>（08-27）</li><li><a href="news.php?nid=763" target="_blank" title="关于做好2013年暑假期间学生安全稳定工作的通知">关于做好2013年暑假期间学生安全稳定工作的通知</a>（07-01）</li><li><a href="news.php?nid=759" target="_blank" title="2013年离校系统使用流程说明">2013年离校系统使用流程说明</a>（06-26）</li><li><a href="news.php?nid=806" target="_blank" title="【2012本】领取（补发）教材通知 ">【2012本】领取（补发）教材通知 </a>（09-06）</li><li><a href="news.php?nid=802" target="_blank" title="【2012本】2012-2013学年成绩及第二学期成绩统计情况">【2012本】2012-2013学年成绩及第二学期成绩统计情况</a>（09-04）</li><li><a href="news.php?nid=800" target="_blank" title="关于新生迁户口的通知">关于新生迁户口的通知</a>（09-04）</li><li><a href="news.php?nid=799" target="_blank" title="计算机学生（10级本科生）考研专业教室座位使用申请的通知">计算机学生（10级本科生）考研专业教室座位使用申请的通知</a>（09-03）</li><li><a href="news.php?nid=798" target="_blank" title="【2012本】开展2013-2014学年家庭经济困难学生认定工作的通知">【2012本】开展2013-2014学年家庭经济困难学生认定工作的通知</a>（09-03）</li>			</ul>
+		</div>
+		<!-- bd col6 commbox -->
+
+		<div class="comm_box">
+			<h3 class="comm_box_hd info_col6_title">随机新闻</h3>
+			<ul class="comm_box_bd_ul info_col6_ul">
+				<li><a href="news.php?nid=143" target="_blank" title="北京汉舟翻译有限责任公司">北京汉舟翻译有限责任公司</a>（06-04）</li><li><a href="news.php?nid=69" target="_blank" title="意法&#8729;爱立信半导体（北京）有限公司2012届校园招聘（附实习岗）">意法&amp;#8729;爱立信半导体（北京）有限公司2012届校园招聘（附实习岗）</a>（04-13）</li><li><a href="news.php?nid=5" target="_blank" title="计算机学院2008级本科生获“英飞凌杯”第五届嵌入式处理器设计应用大奖赛华北赛区二等奖">计算机学院2008级本科生获“英飞凌杯”第五届嵌入式处理器设计应用大奖赛华北赛区二等奖</a>（08-22）</li><li><a href="news.php?nid=768" target="_blank" title="计算学生科技创新基地隆重召开2013年暑假集训开训典礼">计算学生科技创新基地隆重召开2013年暑假集训开训典礼</a>（07-05）</li><li><a href="news.php?nid=558" target="_blank" title="【10本】 国家留学基金委资助爱尔兰国立都柏林大学项目">【10本】 国家留学基金委资助爱尔兰国立都柏林大学项目</a>（03-18）</li><li><a href="news.php?nid=298" target="_blank" title="纪念“一二·九”运动歌咏比赛报名的通知">纪念“一二·九”运动歌咏比赛报名的通知</a>（10-17）</li><li><a href="news.php?nid=376" target="_blank" title="“21世纪学科前沿”系列讲座之-----“Automatic Structures and the Isomorphism Problem” 专题学术讲座">“21世纪学科前沿”系列讲座之-----“Automatic Structures and the Isomorphism Problem” 专题学术讲座</a>（11-15）</li><li><a href="news.php?nid=186" target="_blank" title="计算机暑期社会实践团走进IBM中国创新中心 ">计算机暑期社会实践团走进IBM中国创新中心 </a>（07-27）</li><li><a href="news.php?nid=801" target="_blank" title="2013级双选表和导师双选题目">2013级双选表和导师双选题目</a>（09-04）</li><li><a href="news.php?nid=695" target="_blank" title="关于开展2013年北京高校红色“1＋1”活动的通知">关于开展2013年北京高校红色“1＋1”活动的通知</a>（05-21）</li>			</ul>
+		</div>
+		<!-- bd col6 commbox -->
+	</div>
+	<!-- bd col6 -->
+
+	<div id="bd-c18">
+		<div class="bd-c18-sp-entry">
+			<h2 class="sp-entry-title">关于做好普通高等学校毕业生求职补贴发放工作的通知</h2>
+			<p class="sp-entry-info tac">发布时间：2013-08-30 11:48:48<em class="pipe">|</em>来源：学生工作办公室&nbsp;刘平利<em class="pipe">|</em>查看数：593<em class="pipe">|</em><a href="javascript:;" onclick="window.close();">【关闭】</a></p>
+			<div class="sp-entry-body">
+					<span style="font-size: 12pt">各位2013年毕业生及即将毕业的同学们：<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;附件中是《北京市人力资源和社会保障局 北京市教育委员会 北京市财政局关于做好普通高等学校毕业生求职补贴发放工作的通知》，为了有效实施该项通知，请自愿申请的同学按通知要求将材料递交到学院，包括申请表（见本页附件），低保证明复印件，身份证复印件，学院在审核原件与复印件一致后在复印件上盖章证明，原件返回毕业生本人，其中“所在家庭享受城乡居民最低生活保障有关证明”包括：城乡居民最低生活保障金领取证；城乡居民最低生活保障证；城乡居民最低生活保障低保证。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+&nbsp;&nbsp;&nbsp;<b><span style="color: #ff0000">&nbsp;&nbsp; 学院受理2013届毕业生的申请材料截止于2013年11月15日，2014届毕业生的申请材料截止于本学期结束前。<br />
+</span></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学院办理联系人：刘平利&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 联系电话：6891-2804<br />
+<br />
+<br />
+<div style="text-align: right"><span style="font-size: 12pt">计算机学院学生办公室<br />
+2013年8月</span></div>
+</span>					<div class="sp-entry-attach"><b><span class="sp-entry-attach-down">相关附件:</span></b><br><ul class="sp-entry-attach-ul"><li><a href="http://cs.bit.edu.cn/api/attach.php?MODULE=homepage&YM=1308&ATTACHMENT_ID=439042531&ATTACHMENT_NAME=%B1%B1%BE%A9%CA%D0%C8%CB%C1%A6%D7%CA%D4%B4%BA%CD%C9%E7%BB%E1%B1%A3%D5%CF%BE%D6+%B1%B1%BE%A9%CA%D0%BD%CC%D3%FD%CE%AF%D4%B1%BB%E1+%B1%B1%BE%A9%CA%D0%B2%C6%D5%FE%BE%D6%B9%D8%D3%DA%D7%F6%BA%C3%C6%D5%CD%A8%B8%DF%B5%C8%D1%A7%D0%A3%B1%CF%D2%B5%C9%FA%C7%F3%D6%B0%B2%B9%CC%F9%B7%A2%B7%C5%B9%A4%D7%F7%B5%C4%CD%A8%D6%AA%281%29+2.doc">北京市人力资源和社会保障局 北京市教育委员会 北京市财政局关于做好普通高等学校毕业生求职补贴发放工作的通知(1) 2.doc</a></li></ul></div>			</div>
+			<span class="gototop"><a href="#top"><img src="./img/gototop.gif" alt="" width="41" height="13" /></a></span>
+		</div>
+		<!-- end of sp-entry -->
+	</div>
+
+	<div class="clear"></div>
+</div>
+
+<div id="ft">
+	<p>&copy;版权所有 2005-2011 北京理工大学计算机学院 &nbsp;|&nbsp;<a href="./web" target="_blank">原网站入口</a>&nbsp;|&nbsp;<a href="http://cs.bit.edu.cn:8081" target="_blank">原学生事务平台</a></p>
+</div>

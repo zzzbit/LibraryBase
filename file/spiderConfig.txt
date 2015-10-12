@@ -1,0 +1,13 @@
+http://m.jd.com/ware/search.action?keyword=%E9%9E%8B
+C:\DataLib\tmptest\
+<div class="title"><a href='.+?'>|http://m.jd.com(*)
+<a href='.+?'>обр╩рЁ|http://m.jd.com(*)
+<div class='p-img'><a href='.+?'>|http://m.jd.com(*)
+<img src='.+?' class="img"
+&yen;.+?<
+<title>.+?</title>
+10
+
+
+
+

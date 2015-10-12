@@ -1,0 +1,6 @@
+°Ù¶Èmp3
+1
+http://music.baidu.com/tag/%E4%BC%A4%E6%84%9F
+2
+10@@<a href="/song/.+?"|http://music.baidu.com/song/(*)/download
+02mp3_@@href="/data/music/file\?link=http.+?"|http(*)

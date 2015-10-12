@@ -1,0 +1,6 @@
+Ñ§Ôº¸½¼þ
+1
+http://cs.bit.edu.cn/list.php?tid=22,23,24
+2
+10@@<span class="fr">[\s\S]+?</span><a href=".+?"|http://cs.bit.edu.cn/(*)
+12file_@@<li><a href=".+?">[\s\S]+?</a></li>
